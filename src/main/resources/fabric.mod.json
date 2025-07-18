@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "trailsandtalesbackportmod",
+	"version": "${version}",
+	"name": "TrailsAndTalesBackportMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ItsNuaZ"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/trailsandtalesbackportmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.itsnuaz.tatbackport.TrailsAndTalesBackportMod"
+		],
+		"client": [
+			"io.github.itsnuaz.tatbackport.TrailsAndTalesBackportModClient"
+		],
+		"fabric-datagen": [
+			"io.github.itsnuaz.tatbackport.TrailsAndTalesBackportModDataGenerator"
+		]
+	},
+	"mixins": [
+		"trailsandtalesbackportmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
